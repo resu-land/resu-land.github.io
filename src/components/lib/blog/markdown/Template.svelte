@@ -41,8 +41,4 @@
         /* @apply sm:hover:opacity-80; */
         /* @apply sm:active:opacity-50; */
     }
-    :global(.dark) .entry-tag {
-        @apply bg-dk_back_2;
-        @apply text-dk_front_1;
-    }
 </style>

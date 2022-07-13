@@ -12,9 +12,7 @@
 </svelte:head>
 
 <Container cssprops="">
-    <Article
-        cssprops="space-y-8 w-full max-w-2xl mx-auto"
-    >
+    <Article cssprops="space-y-8 w-full mx-auto">
         <Section cssprops="space-y-4">
             <Timeline {timeline} />
         </Section>

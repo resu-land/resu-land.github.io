@@ -1,6 +1,7 @@
 <script lang="ts">
     import {
         faGithub,
+        faGitlab,
         faLinkedin
     } from '@fortawesome/free-brands-svg-icons/index.es';
     import { faEnvelope } from '@fortawesome/free-solid-svg-icons/index.es';
@@ -21,13 +22,24 @@
                     />
                 </a>
                 <a
-                    href="https://www.github.com/unknvn"
+                    href="https://www.github.com/resu-gh"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="cfooter-menu-a"
                 >
                     <Fa
                         icon={faGithub}
+                        size="lg"
+                    />
+                </a>
+                <a
+                    href="https://www.gitlab.com/resu-gl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cfooter-menu-a"
+                >
+                    <Fa
+                        icon={faGitlab}
                         size="lg"
                     />
                 </a>
