@@ -1,0 +1,23 @@
+<svg style="isolation:isolate" version="1.1" viewBox="0 0 126.9 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="_clipPath_8TWIgR1z3pxinjWBiigzcEIrVJKv9Gq4">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g transform="matrix(.29589 0 0 .29589 -10.52 -11.34)" clip-path="url(#_clipPath_8TWIgR1z3pxinjWBiigzcEIrVJKv9Gq4)">
+    <path d="m318.42 453.54 145.28-404c2.463-6.852-1.42-11.848-8.668-11.149l-114.25 11.006c-7.247 0.699-15.076 6.848-17.47 13.723l-134.47 386.1c-2.396 6.875 1.571 12.457 8.852 12.457h111.21c3.64 0 7.596-2.78 8.828-6.207z"/>
+    <defs>
+      <filter id="Hmac7mZraFWHw0G84Yxj4QuzeTFp0E7Y" x="-.22015" y="-.085804" width="1.4403" height="1.1716" color-interpolation-filters="sRGB">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="6.440413594258542"/>
+        <feOffset dx="0" dy="0" result="pf_100_offsetBlur"/>
+        <feFlood flood-color="#000000" flood-opacity=".65"/>
+        <feComposite in2="pf_100_offsetBlur" operator="in" result="pf_100_dropShadow"/>
+        <feBlend in="SourceGraphic" in2="pf_100_dropShadow"/>
+      </filter>
+    </defs>
+    <g filter="url(#Hmac7mZraFWHw0G84Yxj4QuzeTFp0E7Y)">
+      <path d="m301.85 455.47-60.489-174.74 8.641-5.401 61.57 178.22z"/>
+    </g>
+    <path d="m44.963 38.392 114.25 11.006c7.247 0.699 15.084 6.845 17.49 13.717l137.32 392.33c1.202 3.437-0.777 6.225-4.418 6.225h-111.91c-7.281 0-15.193-5.562-17.657-12.414l-143.74-399.72c-2.463-6.852 1.42-11.848 8.668-11.149z"/>
+  </g>
+</svg>
