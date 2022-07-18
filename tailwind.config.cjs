@@ -13,6 +13,9 @@ const config = {
 
     theme: {
         extend: {
+            fontFamily: {
+                nunito: ['Nunito', 'sans-serif']
+            },
             colors: {
                 lg_back_0: colors.neutral[100],
                 lg_back_1: colors.neutral[200],
@@ -32,20 +35,15 @@ const config = {
                 dk_tag_0: colors.blue[500],
                 dk_tag_1: colors.blue[300],
 
-                gn_logo_layer_0:
-                    colors.purple[800],
-                gn_logo_layer_1:
-                    colors.purple[600],
-                gn_logo_layer_2:
-                    colors.purple[400],
+                gn_logo_layer_0: colors.purple[800],
+                gn_logo_layer_1: colors.purple[600],
+                gn_logo_layer_2: colors.purple[400],
 
                 debug: colors
             },
             animation: {
-                cs_rotate:
-                    'spin 30s linear infinite',
-                cs_pulse:
-                    'pulse 5s cubic-bezier(0.4,0,0.6,1) infinite'
+                cs_rotate: 'spin 30s linear infinite',
+                cs_pulse: 'pulse 5s cubic-bezier(0.4,0,0.6,1) infinite'
             }
         }
     },

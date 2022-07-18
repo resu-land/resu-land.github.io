@@ -4,10 +4,7 @@ const l =
 const ll = l.length;
 
 const rl = (min: number) => {
-    return l.slice(
-        0,
-        Math.random() * (ll - min) + min
-    );
+    return l.slice(0, Math.random() * (ll - min) + min);
 };
 
 export default {

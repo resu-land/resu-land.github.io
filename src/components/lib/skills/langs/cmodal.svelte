@@ -20,14 +20,9 @@
         />
         {#each Array(15) as _}
             <div>
-                Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
-                Neque nemo autem dolor. Sunt
-                voluptas ipsa nostrum, laborum
-                laboriosam explicabo asperiores
-                consequuntur a mollitia, dolorum,
-                facere harum exercitationem
-                delectus ut saepe.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nemo autem dolor.
+                Sunt voluptas ipsa nostrum, laborum laboriosam explicabo asperiores consequuntur a
+                mollitia, dolorum, facere harum exercitationem delectus ut saepe.
             </div>
         {/each}
     </div>

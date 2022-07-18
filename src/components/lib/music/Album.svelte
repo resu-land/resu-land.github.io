@@ -7,16 +7,9 @@
     export let year: number;
 </script>
 
-<div
-    class="album-container"
-    in:fly={{ y: 50, duration: 200, delay: 0 }}
->
+<div class="album-container" in:fly={{ y: 50, duration: 200, delay: 0 }}>
     <button class="album-link">
-        <img
-            class="album"
-            src={`/music/${cover}`}
-            alt={title}
-        />
+        <img class="album" src={`/music/${cover}`} alt={title} />
         <span class="sr-only">{author}</span>
         <span class="sr-only">{year}</span>
     </button>
@@ -28,12 +21,7 @@
     }
 
     .album-link {
-        -webkit-tap-highlight-color: rgba(
-            0,
-            0,
-            0,
-            0
-        );
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
     .album {
         @apply object-contain;

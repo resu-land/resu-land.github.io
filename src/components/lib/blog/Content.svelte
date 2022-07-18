@@ -23,13 +23,9 @@
     }
 </script>
 
-<section
-    class="{css} {cssprops}"
-    in:fly={{ y: 50, duration: 100, delay: 0 }}
->
+<section class="{css} {cssprops}" in:fly={{ y: 50, duration: 100, delay: 0 }}>
     {#if title}
-        <span class="ccontent-title">{title}</span
-        >
+        <span class="ccontent-title">{title}</span>
     {/if}
     <slot />
 </section>

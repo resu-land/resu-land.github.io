@@ -4,15 +4,11 @@ import path from 'path';
 import preprocess from 'svelte-preprocess';
 import mdsvexConfig from './mdsvex.config.js';
 
-const dev =
-    process.env.NODE_ENV === 'development';
+const dev = process.env.NODE_ENV === 'development';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-    extensions: [
-        '.svelte',
-        ...mdsvexConfig.extensions
-    ],
+    extensions: ['.svelte', ...mdsvexConfig.extensions],
 
     preprocess: [
         preprocess({
@@ -31,18 +27,10 @@ const config = {
         vite: {
             resolve: {
                 alias: {
-                    $components: path.resolve(
-                        'src/components'
-                    ),
-                    $stores:
-                        path.resolve(
-                            'src/stores'
-                        ),
-                    $data: path.resolve(
-                        'src/data'
-                    ),
-                    $assets:
-                        path.resolve('src/assets')
+                    $components: path.resolve('src/components'),
+                    $stores: path.resolve('src/stores'),
+                    $data: path.resolve('src/data'),
+                    $assets: path.resolve('src/assets')
                 }
             }
         },

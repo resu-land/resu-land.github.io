@@ -1,10 +1,7 @@
 <script lang="ts">
     import { base } from '$app/paths';
     import { dark, toggle } from '$stores/theme';
-    import {
-        faMoon,
-        faSun
-    } from '@fortawesome/free-solid-svg-icons/index.es';
+    import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons/index.es';
     import Fa from 'svelte-fa/src/fa.svelte';
 </script>
 
@@ -12,25 +9,13 @@
     <div class="cnav-container">
         <div class="cnav-box-scrollable">
             <div class="cnav-menu">
-                <a
-                    href={`${base}/`}
-                    class="cnav-menu-a">Home</a
-                >
-                <!-- <a href={`${base}/skills`} class="cnav-menu-a">Skills</a> -->
-                <a
-                    href={`${base}/blog`}
-                    class="cnav-menu-a">Blog</a
-                >
-                <a
-                    href={`${base}/music`}
-                    class="cnav-menu-a">Music</a
-                >
+                <a href={`${base}/`} class="cnav-menu-a">Home</a>
+                <a href={`${base}/cv`} class="cnav-menu-a">CV</a>
+                <a href={`${base}/blog`} class="cnav-menu-a">Blog</a>
+                <a href={`${base}/music`} class="cnav-menu-a">Music</a>
             </div>
         </div>
-        <button
-            class="cnav-menu-button"
-            on:click={toggle}
-        >
+        <button class="cnav-menu-button" on:click={toggle}>
             {#if $dark}
                 <Fa icon={faMoon} size="lg" />
             {:else}
@@ -84,12 +69,7 @@
     .cnav-menu-a {
         @apply active:text-lg_front_hl;
         @apply sm:hover:text-lg_front_hl;
-        -webkit-tap-highlight-color: rgba(
-            0,
-            0,
-            0,
-            0
-        );
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         /* @apply transition-all; */
         /* @apply duration-75; */
@@ -102,12 +82,7 @@
     .cnav-menu-button {
         @apply active:text-lg_front_hl;
         @apply sm:hover:text-lg_front_hl;
-        -webkit-tap-highlight-color: rgba(
-            0,
-            0,
-            0,
-            0
-        );
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         /* @apply transition-all; */
         /* @apply duration-75; */

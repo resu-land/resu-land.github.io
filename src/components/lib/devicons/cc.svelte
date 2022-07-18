@@ -1,14 +1,7 @@
 <script lang="ts">
     export let containerprops: string;
     export let cssprops: string;
-    export let csspaths: [
-        string,
-        string,
-        string,
-        string,
-        string,
-        string
-    ];
+    export let csspaths: [string, string, string, string, string, string];
 </script>
 
 <div class="vcontainer {containerprops}">

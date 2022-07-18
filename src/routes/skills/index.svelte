@@ -11,26 +11,11 @@
 </svelte:head>
 
 <Container cssprops="">
-    <Article
-        cssprops="space-y-10 w-full max-w-2xl mx-auto"
-    >
-        <Section
-            title="Programming Languages"
-            cssprops="space-y-4"
-        >
-            <Content
-                ctype="cols"
-                cssprops="space-y-4 pl-5"
-            >
-                <Content
-                    title="Expert"
-                    ctype="cols"
-                    cssprops="space-y-2"
-                >
-                    <Content
-                        ctype="rows"
-                        cssprops="flex-wrap"
-                    >
+    <Article cssprops="space-y-10 w-full max-w-2xl mx-auto">
+        <Section title="Programming Languages" cssprops="space-y-4">
+            <Content ctype="cols" cssprops="space-y-4 pl-5">
+                <Content title="Expert" ctype="cols" cssprops="space-y-2">
+                    <Content ctype="rows" cssprops="flex-wrap">
                         <C />
                     </Content>
                 </Content>

@@ -22,10 +22,13 @@
         @apply text-xl;
     }
 
-    :global(.dark) .entry-tag {
-        @apply bg-dk_back_2;
-        @apply text-dk_front_1;
+    @font-face {
+        font-family: 'nunito';
+        src: url('./fonts/nunito/Nunito-VariableFont_wght.ttf') format('truetype'),
+            url('./fonts/nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
     }
+
+    /* temp style */
 
     code[class*='language-'],
     pre[class*='language-'] {
@@ -161,4 +164,6 @@
     .token.deleted {
         background: #fb4934; /* red2 */
     }
+
+    /* temp style */
 }

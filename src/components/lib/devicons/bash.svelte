@@ -1,26 +1,14 @@
 <script lang="ts">
     export let containerprops: string;
     export let cssprops: string;
-    export let csspaths: [
-        string,
-        string,
-        string,
-        string
-    ];
+    export let csspaths: [string, string, string, string];
 </script>
 
 <div class="vcontainer {containerprops}">
     <div>
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 16.832 19.23"
-            class={cssprops}
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.832 19.23" class={cssprops}>
             <g data-name="Layer 2">
-                <g
-                    stroke-width=".122"
-                    data-name="Layer 1"
-                >
+                <g stroke-width=".122" data-name="Layer 1">
                     <path
                         class={csspaths[0]}
                         d="M15.661 3.925 9.59.32a2.287 2.287 0 0 0-2.344 0L1.171 3.925a2.422 2.422 0 0 0-1.17 2.087v7.21a2.422 2.422 0 0 0 1.17 2.085l6.073 3.604a2.288 2.288 0 0 0 2.343 0l6.073-3.604a2.422 2.422 0 0 0 1.172-2.087V6.012a2.422 2.422 0 0 0-1.17-2.087z"

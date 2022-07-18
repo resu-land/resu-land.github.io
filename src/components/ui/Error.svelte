@@ -11,8 +11,7 @@
         <Logo cssprops="w-24" />
     </a>
     <div class="cerror-box">
-        <span class="cerror-status">{status}</span
-        >
+        <span class="cerror-status">{status}</span>
         <span class="cerror-msg">{message}</span>
     </div>
 </div>
@@ -41,12 +40,7 @@
         @apply sm:active:opacity-50;
         @apply transition-all;
         @apply duration-75;
-        -webkit-tap-highlight-color: rgba(
-            0,
-            0,
-            0,
-            0
-        );
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 
     .cerror-box {

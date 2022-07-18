@@ -6,16 +6,9 @@
 
 <div class="vcontainer {containerprops}">
     <div>
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 128 117.12"
-            class={cssprops}
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 117.12" class={cssprops}>
             <g stroke-width="0">
-                <path
-                    class={csspaths[0]}
-                    d="m15.895 25.098 22.589-6.693-15.06 18.405z"
-                />
+                <path class={csspaths[0]} d="m15.895 25.098 22.589-6.693-15.06 18.405z" />
                 <path
                     class={csspaths[0]}
                     d="m25.935 79.477-9.203 4.183-6.693 14.222H0V18.405h38.484l-10.876 9.203-4.183 9.202h-5.02v42.667z"
@@ -30,10 +23,7 @@
                     d="M46.85 18.405h46.013V36.81H30.954L46.85 26.771z"
                     shape-rendering="crispEdges"
                 />
-                <path
-                    class={csspaths[0]}
-                    d="m75.294 87.006 21.752-7.529L81.15 97.882z"
-                />
+                <path class={csspaths[0]} d="m75.294 87.006 21.752-7.529L81.15 97.882z" />
                 <path
                     class={csspaths[0]}
                     d="m97.046 79.477-13.386 7.53-2.51 10.875H35.137V79.477z"
@@ -48,10 +38,7 @@
                     d="M109.595 79.477v-41.83h-7.53l8.366-7.53 7.53-11.712H128v79.477H88.68l11.712-10.039 4.183-8.366z"
                     shape-rendering="crispEdges"
                 />
-                <path
-                    class={csspaths[0]}
-                    d="m88.68 97.882 15.895-18.405 4.183 12.549z"
-                />
+                <path class={csspaths[0]} d="m88.68 97.882 15.895-18.405 4.183 12.549z" />
             </g>
         </svg>
     </div>

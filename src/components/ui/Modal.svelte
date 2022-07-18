@@ -10,31 +10,17 @@
 
 {#if isOpen}
     <div class="backdrop" on:click={closeModal}>
-        <div
-            role="dialog"
-            class="modal"
-            transition:fly={{ y: 50 }}
-            on:introstart
-            on:outroend
-        >
+        <div role="dialog" class="modal" transition:fly={{ y: 50 }} on:introstart on:outroend>
             <div class="contents">
                 <div class="header-box">
                     <div class="header-title">
                         {header}
                     </div>
-                    <button
-                        class="header-close-button"
-                        on:click={closeModal}
-                    >
-                        <Fa
-                            icon={faClose}
-                            size="lg"
-                        />
+                    <button class="header-close-button" on:click={closeModal}>
+                        <Fa icon={faClose} size="lg" />
                     </button>
                 </div>
-                <div
-                    class="box-scrollable body-box"
-                >
+                <div class="box-scrollable body-box">
                     <slot />
                 </div>
             </div>
@@ -114,12 +100,7 @@
         @apply place-self-start;
         @apply active:text-lg_front_hl;
         @apply sm:hover:text-lg_front_hl;
-        -webkit-tap-highlight-color: rgba(
-            0,
-            0,
-            0,
-            0
-        );
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         @apply transition-all;
         @apply duration-75;

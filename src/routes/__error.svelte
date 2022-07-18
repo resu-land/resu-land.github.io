@@ -23,10 +23,7 @@
 
 <Container cssprops="">
     {#if status == 404}
-        <Error
-            {status}
-            message="Oops... page not found"
-        />
+        <Error {status} message="Oops... page not found" />
     {:else}
         <Error {status} {message} />
     {/if}

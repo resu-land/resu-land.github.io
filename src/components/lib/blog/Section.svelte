@@ -5,13 +5,9 @@
     export let title: string = '';
 </script>
 
-<section
-    class="csection {cssprops}"
-    in:fly={{ y: 50, duration: 100, delay: 0 }}
->
+<section class="csection {cssprops}" in:fly={{ y: 50, duration: 100, delay: 0 }}>
     {#if title}
-        <span class="csection-title">{title}</span
-        >
+        <span class="csection-title">{title}</span>
     {/if}
     <slot />
 </section>

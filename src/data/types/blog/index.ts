@@ -26,11 +26,7 @@ export type ArticleT = {
 
 /// article class
 export class Article implements ArticleT {
-    constructor(
-        title: string,
-        link: string,
-        tags: Tag[]
-    ) {
+    constructor(title: string, link: string, tags: Tag[]) {
         this.title = title;
         this.link = link;
         this.tags = tags;

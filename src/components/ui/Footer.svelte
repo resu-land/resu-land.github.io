@@ -1,9 +1,5 @@
 <script lang="ts">
-    import {
-        faGithub,
-        faGitlab,
-        faLinkedin
-    } from '@fortawesome/free-brands-svg-icons/index.es';
+    import { faGithub, faGitlab, faLinkedin } from '@fortawesome/free-brands-svg-icons/index.es';
     import { faEnvelope } from '@fortawesome/free-solid-svg-icons/index.es';
     import Fa from 'svelte-fa/src/fa.svelte';
 </script>
@@ -16,10 +12,7 @@
                     href="mailto:fake@email.test?subject=Contact&body=Message"
                     class="cfooter-menu-a"
                 >
-                    <Fa
-                        icon={faEnvelope}
-                        size="lg"
-                    />
+                    <Fa icon={faEnvelope} size="lg" />
                 </a>
                 <a
                     href="https://www.github.com/resu-gh"
@@ -27,10 +20,7 @@
                     rel="noopener noreferrer"
                     class="cfooter-menu-a"
                 >
-                    <Fa
-                        icon={faGithub}
-                        size="lg"
-                    />
+                    <Fa icon={faGithub} size="lg" />
                 </a>
                 <a
                     href="https://www.gitlab.com/resu-gl"
@@ -38,10 +28,7 @@
                     rel="noopener noreferrer"
                     class="cfooter-menu-a"
                 >
-                    <Fa
-                        icon={faGitlab}
-                        size="lg"
-                    />
+                    <Fa icon={faGitlab} size="lg" />
                 </a>
                 <a
                     href="https://www.linkedin.com"
@@ -49,10 +36,7 @@
                     rel="noopener noreferrer"
                     class="cfooter-menu-a"
                 >
-                    <Fa
-                        icon={faLinkedin}
-                        size="lg"
-                    />
+                    <Fa icon={faLinkedin} size="lg" />
                 </a>
             </div>
         </div>
@@ -101,12 +85,7 @@
     .cfooter-menu-a {
         @apply active:text-lg_front_hl;
         @apply sm:hover:text-lg_front_hl;
-        -webkit-tap-highlight-color: rgba(
-            0,
-            0,
-            0,
-            0
-        );
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         /* @apply transition-all; */
         /* @apply duration-75; */

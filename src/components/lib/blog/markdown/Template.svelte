@@ -10,16 +10,10 @@
 <Container cssprops="">
     <Section {title} cssprops="space-y-4">
         {new Date(date).toDateString()}
-        <Content
-            ctype="rows"
-            cssprops="flex-wrap"
-        >
+        <Content ctype="rows" cssprops="flex-wrap">
             <div class="entry-tag">tag</div>
         </Content>
-        <Content
-            ctype="cols"
-            cssprops="space-y-2"
-        >
+        <Content ctype="cols" cssprops="space-y-2">
             <slot />
         </Content>
     </Section>

@@ -22,11 +22,6 @@
 		duration-75"
 >
     {#each albums as album}
-        <AlbumC
-            author={album.author}
-            title={album.title}
-            cover={album.cover}
-            year={album.year}
-        />
+        <AlbumC author={album.author} title={album.title} cover={album.cover} year={album.year} />
     {/each}
 </Content>

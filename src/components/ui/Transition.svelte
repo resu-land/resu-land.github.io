@@ -5,10 +5,7 @@
 </script>
 
 {#key url}
-    <div
-        class="ctransition"
-        in:fade={{ duration: 200, delay: 0 }}
-    >
+    <div class="ctransition" in:fade={{ duration: 200, delay: 0 }}>
         <slot />
     </div>
 {/key}

@@ -1,7 +1,4 @@
-import {
-    Album,
-    type Timeline
-} from '$data/types/music';
+import { Album, type Timeline } from '$data/types/music';
 
 const we_insist = new Album(
     'Max Roach',
@@ -21,48 +18,13 @@ const black_saint = new Album(
     'the_black_saint_and_the_sinner_lady.jpg',
     1963
 );
-const a_love_supreme = new Album(
-    'John Coltrane',
-    'A Love Supreme',
-    'a_love_supreme.jpg',
-    1964
-);
-const spiritual_unity = new Album(
-    'Albert Ayler',
-    'Spiritual Unity',
-    'spiritual_unity.jpg',
-    1964
-);
-const out_to_lunch = new Album(
-    'Eric Dolphy',
-    'Out To Lunch!',
-    'out_to_lunch.jpg',
-    1964
-);
-const ascension = new Album(
-    'John Coltrane',
-    'Ascension',
-    'ascension.jpg',
-    1965
-);
-const the_magic_city = new Album(
-    'Sun Ra',
-    'The Magic City',
-    'the_magic_city.jpg',
-    1965
-);
-const unit_structures = new Album(
-    'Cecil Taylor',
-    'Unit Structures',
-    'unit_structures.jpg',
-    1966
-);
-const sound = new Album(
-    'Roscoe Mitchell',
-    'Sound',
-    'sound.jpg',
-    1966
-);
+const a_love_supreme = new Album('John Coltrane', 'A Love Supreme', 'a_love_supreme.jpg', 1964);
+const spiritual_unity = new Album('Albert Ayler', 'Spiritual Unity', 'spiritual_unity.jpg', 1964);
+const out_to_lunch = new Album('Eric Dolphy', 'Out To Lunch!', 'out_to_lunch.jpg', 1964);
+const ascension = new Album('John Coltrane', 'Ascension', 'ascension.jpg', 1965);
+const the_magic_city = new Album('Sun Ra', 'The Magic City', 'the_magic_city.jpg', 1965);
+const unit_structures = new Album('Cecil Taylor', 'Unit Structures', 'unit_structures.jpg', 1966);
+const sound = new Album('Roscoe Mitchell', 'Sound', 'sound.jpg', 1966);
 const symphony_for_improvisers = new Album(
     'Don Cherry',
     'Symphony For Improvisers',

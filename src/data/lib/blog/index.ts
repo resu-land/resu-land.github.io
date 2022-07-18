@@ -1,9 +1,4 @@
-import {
-    Article,
-    Tag,
-    type Articles,
-    type Tags
-} from '$data/types/blog';
+import { Article, Tag, type Articles, type Tags } from '$data/types/blog';
 
 /// tags
 const tag1 = new Tag('tag1', '');
@@ -14,13 +9,8 @@ export const tags: Tags = new Map();
 tags.set(tag2.link, tag1);
 
 /// articles
-const art1 = new Article('Article 1', 'art1', [
-    tag1
-]);
-const art2 = new Article('Article 2', 'art2', [
-    tag1,
-    tag2
-]);
+const art1 = new Article('Article 1', 'art1', [tag1]);
+const art2 = new Article('Article 2', 'art2', [tag1, tag2]);
 
 /// articles library
 export const articles: Articles = new Map();

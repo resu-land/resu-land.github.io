@@ -8,8 +8,7 @@ const config = defineConfig({
     },
 
     layout: {
-        article_template:
-            './src/components/lib/blog/markdown/Template.svelte'
+        article_template: './src/components/lib/blog/markdown/Template.svelte'
     },
 
     remarkPlugins: [],

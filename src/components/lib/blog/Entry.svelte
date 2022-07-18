@@ -7,11 +7,7 @@
 </script>
 
 <Content ctype="cols" cssprops="space-y-2">
-    <a
-        class="entry-title"
-        href={`${base}/blog/articles/${article.link}`}
-        >{article.title}</a
-    >
+    <a class="entry-title" href={`${base}/blog/articles/${article.link}`}>{article.title}</a>
     <Content ctype="rows" cssprops="flex-wrap">
         {#each article.tags as tag}
             <div class="entry-tag">{tag.id}</div>
@@ -45,12 +41,7 @@
         @apply text-lg_front_1;
         @apply active:text-lg_front_hl;
         @apply sm:hover:text-lg_front_hl;
-        -webkit-tap-highlight-color: rgba(
-            0,
-            0,
-            0,
-            0
-        );
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         /* @apply transition-all; */
         /* @apply duration-100; */

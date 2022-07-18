@@ -2,16 +2,8 @@
     export let cssprops: string;
 </script>
 
-<svg
-    version="1.0"
-    viewBox="0 0 526.36401 477.03693"
-    class="all {cssprops}"
->
-    <g
-        fill-rule="evenodd"
-        stroke="#000"
-        stroke-linejoin="round"
-    >
+<svg version="1.0" viewBox="0 0 526.36401 477.03693" class="all {cssprops}">
+    <g fill-rule="evenodd" stroke="#000" stroke-linejoin="round">
         <path
             class="path1"
             d="m220.900198.70643 185.55359 330.25875-206.2649.11485-39.56378 70.71366 365.21799.05698L303.040688.5l-82.14049.20643z"
