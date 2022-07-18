@@ -1,0 +1,1 @@
+import{w as a}from"./index-7d6d0761.js";let t=!1;localStorage.theme?t=localStorage.theme==="dark":localStorage.theme="light";const l=a(t),r=()=>{{const e=localStorage.theme==="dark";l.set(!e),localStorage.theme=e?"light":"dark"}};export{l as d,r as t};
