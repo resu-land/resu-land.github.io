@@ -9,9 +9,7 @@
             "$stores": ["src/stores"],
             "$stores/*": ["src/stores/*"],
             "$data": ["src/data"],
-            "$data/*": ["src/data/*"],
-            "$assets": ["src/assets"],
-            "$assets/*": ["src/assets/*"]
+            "$data/*": ["src/data/*"]
         },
         "allowJs": true,
         "checkJs": true,

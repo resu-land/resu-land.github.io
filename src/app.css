@@ -22,10 +22,17 @@
         @apply text-xl;
     }
 
+    /* nunito @font-face */
     @font-face {
         font-family: 'nunito';
-        src: url('./fonts/nunito/Nunito-VariableFont_wght.ttf') format('truetype'),
-            url('./fonts/nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+        src: url('/fonts/nunito/Nunito-VariableFont_wght.ttf') format('truetype'),
+            url('/fonts/nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+    }
+
+    /* print background colors and images */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 
     /* temp style */

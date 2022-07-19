@@ -3,11 +3,12 @@
 
     export let cssprops: string;
     export let title: string = '';
+    export let csstitle: string = '';
 </script>
 
 <section class="csection {cssprops}" in:fly={{ y: 50, duration: 100, delay: 0 }}>
     {#if title}
-        <span class="csection-title">{title}</span>
+        <span class="csection-title {csstitle}">{title}</span>
     {/if}
     <slot />
 </section>

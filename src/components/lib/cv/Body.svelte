@@ -8,11 +8,11 @@
     ctype="grid"
     cssprops="
     gap-6
-    grid-cols-3"
+    grid-cols-1
+    sm:grid-cols-3
+    print:grid-cols-3
+    "
 >
     <Left />
     <Right />
 </Content>
-
-<style lang="postcss">
-</style>

@@ -4,6 +4,7 @@
     export let cssprops: string;
     export let ctype: string;
     export let title: string = '';
+    export let csstitle: string = '';
 
     let css: string;
 
@@ -25,7 +26,7 @@
 
 <section class="{css} {cssprops}" in:fly={{ y: 50, duration: 100, delay: 0 }}>
     {#if title}
-        <span class="ccontent-title">{title}</span>
+        <span class="ccontent-title {csstitle ? csstitle : ''}">{title}</span>
     {/if}
     <slot />
 </section>
