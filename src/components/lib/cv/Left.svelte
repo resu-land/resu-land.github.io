@@ -1,24 +1,22 @@
 <script lang="ts">
+    import Content from '$components/lib/blog/Content.svelte';
+    import Tag from '$components/lib/blog/Tag.svelte';
     import Link from '$components/lib/cv/Link.svelte';
+    import { faGithub, faGitlab, faLinkedin } from '@fortawesome/free-brands-svg-icons/index.es';
     import {
-        faGithub,
-        faGitlab,
-        faLinkedin,
-        faSpeakap
-    } from '@fortawesome/free-brands-svg-icons/index.es';
-    import { faEarthEurope, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons/index.es';
+        faBook,
+        faCommentAlt,
+        faEarthEurope,
+        faEnvelope,
+        faHeadphones,
+        faPenNib,
+        faPhone
+    } from '@fortawesome/free-solid-svg-icons/index.es';
     import Fa from 'svelte-fa/src/fa.svelte';
-    import Content from '../blog/Content.svelte';
-    import Ctag from '../blog/Tag.svelte';
 </script>
 
 <Content ctype="cols" cssprops="space-y-3 col-span-1">
-    <Content
-        title="Contacts"
-        csstitle="uppercase !text-lg font-semibold !text-lg_front_hl"
-        ctype="cols"
-        cssprops="space-y-1"
-    >
+    <Content title="Contacts" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1">
         <Content ctype="cols" cssprops="space-y-1">
             <Link
                 cssprops=""
@@ -33,12 +31,7 @@
             </Link>
         </Content>
     </Content>
-    <Content
-        title="Links"
-        csstitle="uppercase !text-lg font-semibold !text-lg_front_hl"
-        ctype="cols"
-        cssprops="space-y-1"
-    >
+    <Content title="Links" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1">
         <Content ctype="cols" cssprops="space-y-1">
             <Link
                 cssprops=""
@@ -74,84 +67,74 @@
             </Link>
         </Content>
     </Content>
-    <Content
-        title="Languages"
-        csstitle="uppercase !text-lg font-semibold !text-lg_front_hl"
-        ctype="cols"
-        cssprops="space-y-1"
-    >
+    <Content title="Languages" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1">
         <Content
             title="English"
-            csstitle="w-full !text-base !text-lg_front_1 font-semibold"
+            csstitle="!text-base !text-dk_back_2"
             ctype="cols"
             cssprops="space-y-1"
         >
-            <Content ctype="rows" cssprops="space-x-2 place-items-center">
-                <div class="flex"><Fa icon={faSpeakap} /></div>
+            <Content ctype="rows" cssprops="space-x-2 place-items-center text-dk_front_0">
+                <div class="flex"><Fa icon={faHeadphones} /></div>
                 <div>Listening</div>
                 <div class="font-semibold">C2</div>
             </Content>
-            <Content ctype="rows" cssprops="space-x-2 place-items-center">
-                <div class="flex"><Fa icon={faSpeakap} /></div>
+            <Content ctype="rows" cssprops="space-x-2 place-items-center text-dk_front_0">
+                <div class="flex"><Fa icon={faCommentAlt} /></div>
                 <div>Speaking</div>
                 <div class="font-semibold">B1</div>
             </Content>
-            <Content ctype="rows" cssprops="space-x-2 place-items-center">
-                <div class="flex"><Fa icon={faSpeakap} /></div>
+            <Content ctype="rows" cssprops="space-x-2 place-items-center text-dk_front_0">
+                <div class="flex"><Fa icon={faBook} /></div>
                 <div>Reading</div>
                 <div class="font-semibold">C2</div>
             </Content>
-            <Content ctype="rows" cssprops="space-x-2 place-items-center">
-                <div class="flex"><Fa icon={faSpeakap} /></div>
+            <Content ctype="rows" cssprops="space-x-2 place-items-center text-dk_front_0">
+                <div class="flex"><Fa icon={faPenNib} /></div>
                 <div>Writing</div>
                 <div class="font-semibold">C2</div>
             </Content>
         </Content>
     </Content>
-    <Content
-        title="Programming"
-        csstitle="uppercase !text-lg font-semibold !text-lg_front_hl"
-        ctype="cols"
-        cssprops="space-y-1"
-    >
+    <Content title="Programming" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1">
         <Content
-            title="Tier 1"
-            csstitle="w-full !text-base !text-lg_front_1"
+            title="High"
+            csstitle="w-full !text-base !text-dk_back_2"
             ctype="rows"
             cssprops="flex-wrap"
         >
             {#each ['c', 'c++', 'python', 'go', 'c-shells', 'sh-shells', 'x86-asm', 'x86_64-asm', 'arm_v7-asm', 'arm_v8-asm'] as lang}
-                <Ctag name={lang} />
+                <Tag name={lang} />
             {/each}
         </Content>
         <Content
-            title="Tier 2"
-            csstitle="w-full !text-base !text-lg_front_1"
+            title="Medium"
+            csstitle="w-full !text-base !text-dk_back_2"
             ctype="rows"
             cssprops="flex-wrap"
         >
             {#each ['rust', 'lua', 'javascript', 'typescript'] as lang}
-                <Ctag name={lang} />
+                <Tag name={lang} />
             {/each}
         </Content>
         <Content
-            title="Tier 3"
-            csstitle="w-full !text-base !text-lg_front_1"
-            ctype="rows"
-            cssprops="flex-wrap"
-        >
-            {#each ['prolog', 'lisp', 'ml', 'c#', 'php', 'java', 'ruby'] as lang}
-                <Ctag name={lang} />
-            {/each}
-        </Content>
-        <Content
-            title="Learning"
-            csstitle="w-full !text-base !text-lg_front_1"
+            title="Low / Learning"
+            csstitle="w-full !text-base !text-dk_back_2"
             ctype="rows"
             cssprops="flex-wrap"
         >
             {#each ['zig', 'v', 'dart', 'apl', 'haskell'] as lang}
-                <Ctag name={lang} />
+                <Tag name={lang} />
+            {/each}
+        </Content>
+        <Content
+            title="Used"
+            csstitle="w-full !text-base !text-dk_back_2"
+            ctype="rows"
+            cssprops="flex-wrap"
+        >
+            {#each ['prolog', 'lisp', 'ml', 'c#', 'php', 'java', 'ruby'] as lang}
+                <Tag name={lang} />
             {/each}
         </Content>
     </Content>

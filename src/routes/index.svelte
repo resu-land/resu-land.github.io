@@ -2,6 +2,7 @@
     import Article from '$components/lib/blog/Article.svelte';
     import Content from '$components/lib/blog/Content.svelte';
     import Section from '$components/lib/blog/Section.svelte';
+    import Tag from '$components/lib/blog/Tag.svelte';
     import Container from '$components/ui/Container.svelte';
 
     import utils from '$data/utils';
@@ -105,81 +106,81 @@
             <Content ctype="cols" cssprops="space-y-4">
                 <Content title="Computer science fields" ctype="cols" cssprops="space-y-3">
                     <Content ctype="rows" cssprops="flex-wrap">
-                        <div class="ctag">operating systems</div>
-                        <div class="ctag">compiler design</div>
-                        <div class="ctag">computer graphics</div>
+                        <Tag name="operating systems" />
+                        <Tag name="compiler design" />
+                        <Tag name="computer graphics" />
                     </Content>
                 </Content>
                 <Content title="Programming languages" ctype="cols" cssprops="space-y-3">
                     <span class="cdefault-0">Expert</span>
                     <Content ctype="rows" cssprops="flex-wrap">
-                        <div class="ctag">c</div>
-                        <div class="ctag">c++</div>
-                        <div class="ctag">python</div>
-                        <div class="ctag">go</div>
-                        <div class="ctag">sh-shells</div>
-                        <div class="ctag">c-shells</div>
-                        <div class="ctag">rc</div>
-                        <div class="ctag">asm</div>
-                        <div class="ctag">tex</div>
-                        <div class="ctag">m4</div>
-                        <div class="ctag">awk</div>
+                        <Tag name="c" />
+                        <Tag name="c++" />
+                        <Tag name="python" />
+                        <Tag name="go" />
+                        <Tag name="sh-shells" />
+                        <Tag name="c-shells" />
+                        <Tag name="rc" />
+                        <Tag name="asm" />
+                        <Tag name="tex" />
+                        <Tag name="m4" />
+                        <Tag name="awk" />
                     </Content>
                     <span class="cdefault-0">Intermediate</span>
                     <Content ctype="rows" cssprops="flex-wrap">
-                        <div class="ctag">rust</div>
-                        <div class="ctag">lua</div>
-                        <div class="ctag">javascript</div>
-                        <div class="ctag">typescript</div>
-                        <div class="ctag">dart</div>
+                        <Tag name="rust" />
+                        <Tag name="lua" />
+                        <Tag name="javascript" />
+                        <Tag name="typescript" />
+                        <Tag name="dart" />
                     </Content>
                     <span class="cdefault-0">Beginner &ndash; Learning</span>
                     <Content ctype="rows" cssprops="flex-wrap">
-                        <div class="ctag">zig</div>
-                        <div class="ctag">v</div>
-                        <div class="ctag">apl</div>
-                        <div class="ctag">haskell</div>
+                        <Tag name="zig" />
+                        <Tag name="v" />
+                        <Tag name="apl" />
+                        <Tag name="haskell" />
                     </Content>
                     <span class="cdefault-0">Used</span>
                     <Content ctype="rows" cssprops="flex-wrap">
-                        <div class="ctag">prolog</div>
-                        <div class="ctag">lisp</div>
-                        <div class="ctag">ml</div>
-                        <div class="ctag">c#</div>
-                        <div class="ctag">php</div>
-                        <div class="ctag">java</div>
-                        <div class="ctag">ruby</div>
+                        <Tag name="prolog" />
+                        <Tag name="lisp" />
+                        <Tag name="ml" />
+                        <Tag name="c#" />
+                        <Tag name="php" />
+                        <Tag name="java" />
+                        <Tag name="ruby" />
                     </Content>
                     <span class="cdefault-0">Interested</span>
                     <Content ctype="rows" cssprops="flex-wrap">
-                        <div class="ctag">nim</div>
-                        <div class="ctag">tcl</div>
-                        <div class="ctag">smalltalk</div>
+                        <Tag name="nim" />
+                        <Tag name="tcl" />
+                        <Tag name="smalltalk" />
                     </Content>
                 </Content>
                 <Content title="Misc (not complete) (wip)" ctype="cols" cssprops="space-y-3">
                     <Content ctype="rows" cssprops="flex-wrap">
-                        <div class="ctag">git</div>
-                        <div class="ctag">mercurial</div>
-                        <div class="ctag">docker</div>
-                        <div class="ctag">kubernetes</div>
-                        <div class="ctag">ansible</div>
-                        <div class="ctag">suckless</div>
-                        <div class="ctag">vmware</div>
-                        <div class="ctag">redis</div>
-                        <div class="ctag">ros</div>
-                        <div class="ctag">angular</div>
-                        <div class="ctag">react</div>
-                        <div class="ctag">linux-arch</div>
-                        <div class="ctag">linux-gentoo</div>
-                        <div class="ctag">linux-void</div>
-                        <div class="ctag">bsd-freebsd</div>
-                        <div class="ctag">bsd-openbsd</div>
-                        <div class="ctag">qemu</div>
-                        <div class="ctag">kvm</div>
-                        <div class="ctag">bochs</div>
-                        <div class="ctag">virtualbox</div>
-                        <div class="ctag">...</div>
+                        <Tag name="git" />
+                        <Tag name="mercurial" />
+                        <Tag name="docker" />
+                        <Tag name="kubernetes" />
+                        <Tag name="ansible" />
+                        <Tag name="suckless" />
+                        <Tag name="vmware" />
+                        <Tag name="redis" />
+                        <Tag name="ros" />
+                        <Tag name="angular" />
+                        <Tag name="react" />
+                        <Tag name="linux-arch" />
+                        <Tag name="linux-gentoo" />
+                        <Tag name="linux-void" />
+                        <Tag name="bsd-freebsd" />
+                        <Tag name="bsd-openbsd" />
+                        <Tag name="qemu" />
+                        <Tag name="kvm" />
+                        <Tag name="bochs" />
+                        <Tag name="virtualbox" />
+                        <Tag name="..." />
                     </Content>
                 </Content>
             </Content>
@@ -228,26 +229,6 @@
 </Container>
 
 <style lang="postcss">
-    .ctag {
-        @apply mr-1.5;
-        @apply my-1;
-        @apply py-0.5;
-        @apply px-1.5;
-        @apply bg-lg_back_2;
-        @apply text-lg_front_1;
-        @apply font-mono;
-        @apply text-sm;
-        @apply rounded-sm;
-
-        /* @apply active:opacity-50; */
-        /* @apply sm:hover:opacity-80; */
-        /* @apply sm:active:opacity-50; */
-    }
-    :global(.dark) .ctag {
-        @apply bg-dk_back_2;
-        @apply text-dk_front_1;
-    }
-
     .cdefault-0 {
         @apply text-lg_front_0;
     }

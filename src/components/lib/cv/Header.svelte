@@ -3,21 +3,9 @@
 </script>
 
 <Content cssprops="place-items-center space-y-1" ctype="cols">
-    <div class="page-head-name">
-        <span class="page-head-name-name"> Valentino </span>
-        <span class="page-head-name-surname"> Di Giosaffatte </span>
+    <div class="text-2xl">
+        <span class="font-[300] text-dk_back_0"> Valentino </span>
+        <span class="font-[600] text-dk_back_0"> Di Giosaffatte </span>
     </div>
     <span class="font-[200]">Computer scientist / System programmer</span>
 </Content>
-
-<style lang="postcss">
-    .page-head-name {
-        @apply text-2xl;
-    }
-    .page-head-name-name {
-        @apply font-[300];
-    }
-    .page-head-name-surname {
-        @apply font-[600];
-    }
-</style>

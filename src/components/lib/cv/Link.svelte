@@ -26,7 +26,7 @@
         @apply flex;
         @apply place-content-center;
         @apply place-items-center;
-        @apply text-blue-600;
+        @apply text-dk_back_2;
     }
 
     .link-name {
@@ -34,12 +34,14 @@
         @apply flex;
         @apply place-content-center;
         @apply place-items-center;
-        @apply text-blue-600;
-        @apply font-[600];
+        @apply text-dk_back_2;
     }
 
     .link-href {
         @apply break-all;
         @apply text-blue-500;
+        @apply active:text-blue-400;
+        @apply sm:hover:text-blue-400;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 </style>
