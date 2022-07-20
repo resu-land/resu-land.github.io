@@ -1,9 +1,13 @@
 <script lang="ts">
     import Article from '$components/lib/blog/Article.svelte';
-    import Body from '$components/lib/cv/Body.svelte';
-    import Header from '$components/lib/cv/Header.svelte';
+    import BodyAsymGrid from '$components/lib/cv/body/AsymGrid.svelte';
+    import HeaderFront from '$components/lib/cv/header/Front.svelte';
+    import Separator from '$components/lib/cv/header/Separator.svelte';
+    import HeaderTail from '$components/lib/cv/header/Tail.svelte';
     import { faPrint } from '@fortawesome/free-solid-svg-icons/index.es';
     import Fa from 'svelte-fa/src/fa.svelte';
+
+    const pages: number = 2;
 </script>
 
 <div
@@ -23,9 +27,9 @@
         text-dk_front_hl
         rounded-sm
         fixed
-        top-32
+        top-[50%]
         right-10
-        p-4
+        p-3
         active:bg-dk_front_0
         sm:hover:bg-dk_front_0
         sm:active:opacity-50
@@ -36,7 +40,7 @@
     >
         <Fa icon={faPrint} />
     </button>
-    <div
+    <!-- <div
         class="
             grid
             grid-cols-1
@@ -56,7 +60,7 @@
         <div class="rounded-full p-2 bg-cv_text_alt" />
         <div class="rounded-full p-2 bg-cv_link" />
         <div class="rounded-full p-2 bg-cv_link_alt" />
-    </div>
+    </div> -->
     <Article
         cssprops="
         bg-white
@@ -64,7 +68,6 @@
         space-y-3
         font-nunito
         w-screen
-        h-fit
         md:h-[297mm]
         md:w-[210mm]
         print:h-[297mm]
@@ -73,18 +76,17 @@
         shadow-2xl
         print:shadow-none"
     >
-        <Header />
-        <hr class="page-sep" />
-        <Body />
+        <HeaderFront {pages} />
+        <Separator />
+        <BodyAsymGrid page={1} />
     </Article>
-    <!-- <Article
+    <Article
         cssprops="
         bg-white
         py-4 px-6
         space-y-3
         font-nunito
         w-screen
-        h-fit
         md:h-[297mm]
         md:w-[210mm]
         print:h-[297mm]
@@ -93,16 +95,8 @@
         shadow-2xl
         print:shadow-none"
     >
-        <Header />
-        <hr class="page-sep" />
-        <Body />
-    </Article> -->
+        <HeaderTail page={2} {pages} />
+        <Separator />
+        <BodyAsymGrid page={2} />
+    </Article>
 </div>
-
-<style lang="postcss">
-    .page-sep {
-        @apply w-full;
-        @apply h-0.5;
-        @apply bg-neutral-300;
-    }
-</style>

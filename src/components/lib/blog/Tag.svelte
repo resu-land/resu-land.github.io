@@ -1,8 +1,10 @@
 <script lang="ts">
+    export let cssprops: string =
+        'bg-lg_back_2 text-lg_front_1 font-mono dark:bg-dk_back_2 dark:text-dk_front_1';
     export let name: string;
 </script>
 
-<div class="ctag">
+<div class="ctag {cssprops}">
     {name}
 </div>
 
@@ -12,19 +14,8 @@
         @apply my-1;
         @apply py-0.5;
         @apply px-1.5;
-        @apply bg-lg_back_2;
-        @apply text-lg_front_1;
-        @apply font-mono;
         @apply text-sm;
         @apply rounded-sm;
-        @apply w-fit
-
-        /* @apply active:opacity-50; */
-        /* @apply sm:hover:opacity-80; */
-        /* @apply sm:active:opacity-50; */;
-    }
-    :global(.dark) .ctag {
-        @apply bg-dk_back_2;
-        @apply text-dk_front_1;
+        @apply w-fit;
     }
 </style>

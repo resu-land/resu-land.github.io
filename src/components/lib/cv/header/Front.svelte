@@ -1,9 +1,17 @@
 <script lang="ts">
+    import Content from '$components/lib/blog/Content.svelte';
     import { faCakeCandles, faLocationDot } from '@fortawesome/free-solid-svg-icons/index.es';
     import Fa from 'svelte-fa/src/fa.svelte';
-    import Content from '../blog/Content.svelte';
+    import Separator from './Separator.svelte';
+
+    export let pages: number;
 </script>
 
+<Content ctype="rows" cssprops="place-content-end space-x-4 sm:place-content-between">
+    <span class="text-cv_text_alt">Curriculum Vitae</span>
+    <span class="text-cv_text_alt">Page 1 / {pages}</span>
+</Content>
+<Separator />
 <Content
     ctype="cols"
     cssprops="
@@ -26,7 +34,7 @@
             place-self-start
             sm:place-self-stretch"
         >
-            <img src="music/a_love_supreme.jpg" alt="void" class="object-cover w-28 rounded-full" />
+            <img src="imgs/propic.cut.jpg" alt="void" class="object-cover w-24 rounded-full" />
         </div>
         <Content
             ctype="cols"
