@@ -77,6 +77,26 @@
         <hr class="page-sep" />
         <Body />
     </Article>
+    <!-- <Article
+        cssprops="
+        bg-white
+        py-4 px-6
+        space-y-3
+        font-nunito
+        w-screen
+        h-fit
+        md:h-[297mm]
+        md:w-[210mm]
+        print:h-[297mm]
+        print:w-[210mm]
+        !place-content-start
+        shadow-2xl
+        print:shadow-none"
+    >
+        <Header />
+        <hr class="page-sep" />
+        <Body />
+    </Article> -->
 </div>
 
 <style lang="postcss">
