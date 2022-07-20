@@ -39,6 +39,13 @@ const config = {
                 gn_logo_layer_1: colors.purple[600],
                 gn_logo_layer_2: colors.purple[400],
 
+                cv_section: colors.orange[500],
+                cv_sub_section: colors.neutral[700],
+                cv_text: colors.neutral[500],
+                cv_text_alt: colors.neutral[400],
+                cv_link: colors.blue[500],
+                cv_link_alt: colors.blue[300],
+
                 debug: colors
             },
             animation: {

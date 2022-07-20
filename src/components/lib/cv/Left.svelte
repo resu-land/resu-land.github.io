@@ -16,7 +16,7 @@
 </script>
 
 <Content ctype="cols" cssprops="space-y-3 col-span-1">
-    <Content title="Contacts" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1">
+    <Content title="Contacts" csstitle="!text-cv_section" ctype="cols" cssprops="space-y-1">
         <Content ctype="cols" cssprops="space-y-1">
             <Link
                 cssprops=""
@@ -24,14 +24,14 @@
                 hrefname="fake@email.test"
                 href="mailto:fake@email.test?subject=Contact&body=Message"
             >
-                <Fa icon={faEnvelope} />
+                <Fa class="text-cv_subsection" icon={faEnvelope} />
             </Link>
             <Link cssprops="" name="Phone" hrefname="123-456-7890" href="tel:123-456-7890">
-                <Fa icon={faPhone} />
+                <Fa class="text-cv_subsection" icon={faPhone} />
             </Link>
         </Content>
     </Content>
-    <Content title="Links" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1">
+    <Content title="Links" csstitle="!text-cv_section" ctype="cols" cssprops="space-y-1">
         <Content ctype="cols" cssprops="space-y-1">
             <Link
                 cssprops=""
@@ -39,7 +39,7 @@
                 hrefname="github.com/resu-gh"
                 href="https://www.github.com/resu-gh"
             >
-                <Fa icon={faGithub} />
+                <Fa class="text-cv_subsection" icon={faGithub} />
             </Link>
             <Link
                 cssprops=""
@@ -47,15 +47,15 @@
                 hrefname="gitlab.com/resu-gl"
                 href="https://www.gitlab.com/resu-gl"
             >
-                <Fa icon={faGitlab} />
+                <Fa class="text-cv_subsection" icon={faGitlab} />
             </Link>
             <Link
-                cssprops=""
+                cssprops="!space-x-1"
                 name="LinkedIn"
                 hrefname="linkedin.com/in/valentino-di-giosaffatte-527a61243"
                 href="https://www.linkedin.com/in/valentino-di-giosaffatte-527a61243"
             >
-                <Fa icon={faLinkedin} />
+                <Fa class="text-cv_subsection" icon={faLinkedin} />
             </Link>
             <Link
                 cssprops=""
@@ -63,43 +63,43 @@
                 hrefname="resu-land.github.io"
                 href="https://resu-land.github.io"
             >
-                <Fa icon={faEarthEurope} />
+                <Fa class="text-cv_subsection" icon={faEarthEurope} />
             </Link>
         </Content>
     </Content>
-    <Content title="Languages" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1">
+    <Content title="Languages" csstitle="!text-cv_section" ctype="cols" cssprops="space-y-1">
         <Content
             title="English"
-            csstitle="!text-base !text-dk_back_2"
+            csstitle="!text-base !text-cv_sub_section font-semibold"
             ctype="cols"
             cssprops="space-y-1"
         >
-            <Content ctype="rows" cssprops="space-x-2 place-items-center text-dk_front_0">
-                <div class="flex"><Fa icon={faHeadphones} /></div>
-                <div>Listening</div>
-                <div class="font-semibold">C2</div>
+            <Content ctype="rows" cssprops="space-x-2 place-items-center text-cv_text">
+                <Fa icon={faHeadphones} />
+                <span>Listening</span>
+                <span class="font-semibold">C1</span>
             </Content>
-            <Content ctype="rows" cssprops="space-x-2 place-items-center text-dk_front_0">
-                <div class="flex"><Fa icon={faCommentAlt} /></div>
-                <div>Speaking</div>
-                <div class="font-semibold">B1</div>
+            <Content ctype="rows" cssprops="space-x-2 place-items-center text-cv_text">
+                <Fa icon={faCommentAlt} />
+                <span>Speaking</span>
+                <span class="font-semibold">B2</span>
             </Content>
-            <Content ctype="rows" cssprops="space-x-2 place-items-center text-dk_front_0">
-                <div class="flex"><Fa icon={faBook} /></div>
-                <div>Reading</div>
-                <div class="font-semibold">C2</div>
+            <Content ctype="rows" cssprops="space-x-2 place-items-center text-cv_text">
+                <Fa icon={faBook} />
+                <span>Reading</span>
+                <span class="font-semibold">C1</span>
             </Content>
-            <Content ctype="rows" cssprops="space-x-2 place-items-center text-dk_front_0">
-                <div class="flex"><Fa icon={faPenNib} /></div>
-                <div>Writing</div>
-                <div class="font-semibold">C2</div>
+            <Content ctype="rows" cssprops="space-x-2 place-items-center text-cv_text">
+                <Fa icon={faPenNib} />
+                <span>Writing</span>
+                <span class="font-semibold">C1</span>
             </Content>
         </Content>
     </Content>
-    <Content title="Programming" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1">
+    <Content title="Programming" csstitle="!text-cv_section" ctype="cols" cssprops="space-y-1">
         <Content
             title="High"
-            csstitle="w-full !text-base !text-dk_back_2"
+            csstitle="w-full !text-base !text-cv_sub_section font-semibold"
             ctype="rows"
             cssprops="flex-wrap"
         >
@@ -109,7 +109,7 @@
         </Content>
         <Content
             title="Medium"
-            csstitle="w-full !text-base !text-dk_back_2"
+            csstitle="w-full !text-base !text-cv_sub_section font-semibold"
             ctype="rows"
             cssprops="flex-wrap"
         >
@@ -119,7 +119,7 @@
         </Content>
         <Content
             title="Low / Learning"
-            csstitle="w-full !text-base !text-dk_back_2"
+            csstitle="w-full !text-base !text-cv_sub_section font-semibold"
             ctype="rows"
             cssprops="flex-wrap"
         >
@@ -129,7 +129,7 @@
         </Content>
         <Content
             title="Used"
-            csstitle="w-full !text-base !text-dk_back_2"
+            csstitle="w-full !text-base !text-cv_sub_section font-semibold"
             ctype="rows"
             cssprops="flex-wrap"
         >

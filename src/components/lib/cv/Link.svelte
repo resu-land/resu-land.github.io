@@ -26,7 +26,7 @@
         @apply flex;
         @apply place-content-center;
         @apply place-items-center;
-        @apply text-dk_back_2;
+        @apply text-cv_sub_section;
     }
 
     .link-name {
@@ -34,14 +34,16 @@
         @apply flex;
         @apply place-content-center;
         @apply place-items-center;
-        @apply text-dk_back_2;
+        @apply text-cv_sub_section;
+        @apply font-semibold;
     }
 
     .link-href {
         @apply break-all;
-        @apply text-blue-500;
-        @apply active:text-blue-400;
-        @apply sm:hover:text-blue-400;
+        @apply text-cv_link;
+        @apply active:text-cv_link_alt;
+        @apply sm:hover:text-cv_link_alt;
+        @apply sm:active:opacity-50;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
 </style>

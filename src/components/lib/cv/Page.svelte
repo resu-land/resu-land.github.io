@@ -2,14 +2,14 @@
     import Article from '$components/lib/blog/Article.svelte';
     import Body from '$components/lib/cv/Body.svelte';
     import Header from '$components/lib/cv/Header.svelte';
+    import { faPrint } from '@fortawesome/free-solid-svg-icons/index.es';
+    import Fa from 'svelte-fa/src/fa.svelte';
 </script>
 
 <div
     class="
-    cazzo
     flex
     flex-col
-    h-fit
     w-screen
     sm:w-fit
     space-y-4
@@ -20,23 +20,47 @@
     <button
         class="
         bg-dk_back_2
-        text-dk_front_1
+        text-dk_front_hl
         rounded-sm
         fixed
-        bottom-10
-        left-10
-        py-2
-        px-6
-        active:bg-dk_back_1
-        hover:bg-dk_back_1
+        top-32
+        right-10
+        p-4
+        active:bg-dk_front_0
+        sm:hover:bg-dk_front_0
+        sm:active:opacity-50
+        transition-all
+        duration-100
         print:hidden"
         on:click={() => window.print()}
     >
-        Print CV
+        <Fa icon={faPrint} />
     </button>
+    <div
+        class="
+            grid
+            grid-cols-1
+            gap-1
+            fixed
+            bottom-10
+            right-10
+            font-semibold
+            text-sm
+            text-white
+            space-y-4
+            print:hidden"
+    >
+        <div class="rounded-full p-2 bg-cv_section" />
+        <div class="rounded-full p-2 bg-cv_sub_section" />
+        <div class="rounded-full p-2 bg-cv_text" />
+        <div class="rounded-full p-2 bg-cv_text_alt" />
+        <div class="rounded-full p-2 bg-cv_link" />
+        <div class="rounded-full p-2 bg-cv_link_alt" />
+    </div>
     <Article
-        cssprops="bg-white
-        p-6
+        cssprops="
+        bg-white
+        py-4 px-6
         space-y-3
         font-nunito
         w-screen

@@ -4,21 +4,21 @@
 </script>
 
 <Content ctype="cols" cssprops="space-y-3 col-span-2 ">
-    <Content title="About Me" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1 ">
+    <Content title="About Me" csstitle="!text-orange-500" ctype="cols" cssprops="space-y-1 ">
         <div class="text-dk_front_0">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo atque perspiciatis
             possimus laboriosam aliquam veniam, necessitatibus mollitia amet laudantium ipsa ad
             voluptates repudiandae vitae eligendi quis, beatae dolorem. Itaque, id.
         </div>
     </Content>
-    <Content title="Interests" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1 ">
+    <Content title="Interests" csstitle="!text-orange-500" ctype="cols" cssprops="space-y-1 ">
         <Content ctype="rows" cssprops="flex-wrap">
             {#each ['programming languages design', 'compilers design', 'operating systems', 'computer graphics'] as lang}
                 <Tag name={lang} />
             {/each}
         </Content>
     </Content>
-    <Content title="Education" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1">
+    <Content title="Education" csstitle="!text-orange-500" ctype="cols" cssprops="space-y-1">
         <Content
             title="LM-18 - Master's Degree in Computer Science"
             csstitle="!text-base !text-dk_back_2"
@@ -53,7 +53,7 @@
             </div>
         </Content>
     </Content>
-    <Content title="Publications" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1 ">
+    <Content title="Publications" csstitle="!text-orange-500" ctype="cols" cssprops="space-y-1 ">
         <Content
             title="Work in progress - Private journal - Co-author"
             csstitle="!text-base !text-dk_back_2"
@@ -76,7 +76,7 @@
             </ul>
         </Content>
     </Content>
-    <Content title="Projects" csstitle="!text-lg_front_hl" ctype="cols" cssprops="space-y-1 ">
+    <Content title="Projects" csstitle="!text-orange-500" ctype="cols" cssprops="space-y-1 ">
         <div class="text-dk_front_0">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo atque perspiciatis
             possimus laboriosam aliquam veniam, necessitatibus mollitia amet laudantium ipsa ad
