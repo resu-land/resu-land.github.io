@@ -34,7 +34,7 @@
             place-self-start
             sm:place-self-stretch"
         >
-            <img src="imgs/propic.cut.jpg" alt="void" class="object-cover w-24 rounded-full" />
+            <img src="imgs/propic.cut.jpg" alt="void" class="object-cover w-[90px] rounded-full" />
         </div>
         <Content
             ctype="cols"

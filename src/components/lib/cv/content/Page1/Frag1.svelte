@@ -39,12 +39,12 @@
             <Link
                 cssprops=""
                 name="Email"
-                hrefname="fake@email.test"
-                href="mailto:fake@email.test?subject=Contact&body=Message"
+                hrefname="9valentino4@gmail.com"
+                href="mailto:9valentino4@gmail.com?subject=Object&body=Message"
             >
                 <Fa class="text-cv_subsection" icon={faEnvelope} />
             </Link>
-            <Link cssprops="" name="Phone" hrefname="123-456-7890" href="tel:123-456-7890">
+            <Link cssprops="" name="Phone" hrefname="3804629074" href="tel:3804629074">
                 <Fa class="text-cv_subsection" icon={faPhone} />
             </Link>
         </Content>

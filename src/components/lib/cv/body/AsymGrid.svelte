@@ -9,7 +9,7 @@
 <Content
     ctype="grid"
     cssprops="
-    gap-6
+    gap-4
     grid-cols-1
     sm:grid-cols-3
     print:grid-cols-3"

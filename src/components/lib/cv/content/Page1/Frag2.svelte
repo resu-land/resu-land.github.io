@@ -5,14 +5,7 @@
     const tagcss: string = 'bg-lg_back_2 text-lg_front_1 font-nunito';
 </script>
 
-<Content ctype="cols" cssprops="space-y-3 col-span-2 ">
-    <Content title="About Me" csstitle="!text-cv_section" ctype="cols" cssprops="space-y-1 ">
-        <div class="text-cv_text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo atque perspiciatis
-            possimus laboriosam aliquam veniam, necessitatibus mollitia amet laudantium ipsa ad
-            voluptates repudiandae vitae eligendi quis, beatae dolorem. Itaque, id.
-        </div>
-    </Content>
+<Content ctype="cols" cssprops="space-y-3 col-span-2">
     <Content title="Interests" csstitle="!text-cv_section" ctype="cols" cssprops="space-y-1 ">
         <Content ctype="rows" cssprops="flex-wrap">
             {#each ['programming languages design', 'compilers design', 'operating systems', 'computer graphics'] as lang}
@@ -30,9 +23,6 @@
             <span class="text-cv_text">
                 Department of Information Engineering, Computer Science and Mathematics @ University
                 of L'Aquila
-            </span>
-            <span class="text-cv_text_alt font-serif italic">
-                Models for incremental public transportation service design
             </span>
             <div>
                 <span class="text-cv_text_alt">110 / 110</span>
@@ -65,7 +55,7 @@
                 of L'Aquila
             </span>
             <span class="text-cv_text_alt font-serif italic">
-                Computation and performance of Nash equilibria on Generalized Graph K-Coloring games
+                Computation and performance of Nash equilibria on Generalized Graph K-Coloring game
             </span>
         </Content>
         <Content
@@ -74,12 +64,12 @@
             ctype="cols"
             cssprops=""
         >
-            <span class="text-cv_text"> I.I.S. Vittorio Emanuele II, Lanciano </span>
+            <span class="text-cv_text"> I.I.S. Vittorio Emanuele II @ Lanciano </span>
         </Content>
     </Content>
-    <Content title="Publications" csstitle="!text-cv_section" ctype="cols" cssprops="space-y-1 ">
+    <Content title="Work" csstitle="!text-cv_section" ctype="cols" cssprops="space-y-1 ">
         <Content
-            title="Work in progress - Private journal - Co-author"
+            title="Publication - Private journal - Co-author"
             csstitle="!text-base !text-cv_sub_section font-semibold"
             ctype="cols"
             cssprops=""
@@ -98,6 +88,32 @@
                     <span class="text-cv_text"> - University of L'Aquila</span>
                 </li>
             </ul>
+        </Content>
+    </Content>
+    <Content title="Projects" csstitle="!text-cv_section" ctype="cols" cssprops="space-y-1 ">
+        <Content
+            title="rcp"
+            csstitle="!text-base !text-cv_sub_section font-semibold"
+            ctype="cols"
+            cssprops=""
+        >
+            <span class="text-cv_text">
+                Agnostic transpiler for integrating and controlling non-Ros2 robots within Ros2
+                distributed virtual environments
+            </span>
+            <span class="text-cv_text_alt">Python &middot; Closed source (temporarily)</span>
+        </Content>
+        <Content
+            title="dmon"
+            csstitle="!text-base !text-cv_sub_section font-semibold"
+            ctype="cols"
+            cssprops=""
+        >
+            <span class="text-cv_text">
+                Agnostic distributed multithreaded monitoring system and workload generator for
+                microservice-based applications
+            </span>
+            <span class="text-cv_text_alt">Go &middot; Closed source (temporarily)</span>
         </Content>
     </Content>
 </Content>
