@@ -24,6 +24,9 @@
                 Department of Information Engineering, Computer Science and Mathematics @ University
                 of L'Aquila
             </span>
+            <span class="text-cv_text_alt font-serif italic">
+                Models for incremental public transportation service design
+            </span>
             <div>
                 <span class="text-cv_text_alt">110 / 110</span>
                 <span class="text-cv_text_alt">cum laude</span>

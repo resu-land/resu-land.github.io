@@ -34,7 +34,8 @@
         print:w-[210mm]
         !place-content-start
         shadow-2xl
-        print:shadow-none"
+        print:shadow-none
+        print:font-nunito"
     >
         <HeaderFront {pages} />
         <Separator />

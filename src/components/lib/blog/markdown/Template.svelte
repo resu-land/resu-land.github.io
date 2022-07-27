@@ -11,7 +11,10 @@
     <Section {title} cssprops="space-y-4">
         {new Date(date).toDateString()}
         <Content ctype="rows" cssprops="flex-wrap">
-            <div class="entry-tag">tag</div>
+            <div class="entry-tag">todo</div>
+            <div class="entry-tag">dynamic</div>
+            <div class="entry-tag">tags</div>
+            <div class="entry-tag">list</div>
         </Content>
         <Content ctype="cols" cssprops="space-y-2">
             <slot />

@@ -1,34 +1,34 @@
 ---
-title: A long title for Fake Article
+title: Article 1 markdown
 date: 2022-07-12
 layout: article_template
 ---
 
-# wow
+# title h1
 
-## wow
+## title h2
 
-### wow
+### title h3
 
-#### wow
+#### title h4
 
-##### wow
+##### title h5
 
 ---
 
 _italic_ **bold** normal
 ~~strikethrough~~
 
-> wo
+> fix
 >
-> > wo
+> > fix
 > >
-> > > wo
+> > > fix
 
-`+` +
+`+` + fix
 
--   woo
-    -   woo
+-   fix
+    -   fix
 
 ```cpp
 #include <iostream>
